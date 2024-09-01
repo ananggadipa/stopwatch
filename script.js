@@ -207,7 +207,6 @@ function exportToCSV() {
     document.body.removeChild(link); // Remove the link after downloading
 }
 
-
 // Load history when the page is loaded
 window.onload = loadHistory;
 
