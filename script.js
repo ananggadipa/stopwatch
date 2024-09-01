@@ -65,7 +65,10 @@ function recordTime() {
     addHistoryItem(record);
     saveHistory(); // Save history after recording
     noteInput.value = ""; // Clear the note input after recording
+
+    resetTimer(); // Reset the timer to 0 after recording
 }
+
 
 
 function addHistoryItem(record) {
