@@ -1,0 +1,172 @@
+body {
+    font-family: 'Nunito Sans', sans-serif; /* Change font family */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(to bottom, #1F36C7, #000b53);
+    margin: 0;
+}
+
+.container {
+    text-align: center;
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+    width: 500px;
+    max-height: 80vh; /* Limit the height of the container */
+    overflow: hidden; /* Hide overflow */
+}
+
+h1 {
+    font-family: Kanit, sans-serif;
+    color: #1F36C7;
+    margin-bottom: 20px;
+    font-size: 3em;
+}
+
+#display {
+    font-family: Kanit, sans-serif;
+    font-size: 3em;
+    margin: 20px 0;
+    color: #1F36C7;
+    background: #f0f0f0;
+    border: 2px solid #1F36C7;
+    border-radius: 10px;
+    padding: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.button-container {
+    display: flex;
+    flex-wrap: wrap; /* Allow buttons to wrap */
+    justify-content: center; /* Center buttons */
+    margin: 20px 0; /* Add margin for spacing */
+}
+
+button {
+    font-family: Kanit, sans-serif;
+    background-color: #1F36C7;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 15px;
+    font-size: 1em;
+    margin: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+    width: 120px; /* Set a fixed width for buttons */
+}
+
+button:hover {
+    background-color: #000c5a;
+    transform: scale(1.05);
+}
+
+h2 {
+    margin-top: 30px;
+    color: #333;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    max-height: 300px; /* Set a max height for the history list */
+    overflow-y: auto; /* Enable vertical scrolling */
+    margin: 0; /* Remove default margin */
+}
+
+li {
+    background: #f9f9f9;
+    margin: 5px 0;
+    padding: 0 5px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between; /* Keep space between text and buttons */
+    align-items: center;
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1);
+    text-align: left; /* Align text to the left */
+}
+
+li button {
+    background-color: #ff4c4c;
+    padding: 5px 10px; /* Smaller padding for edit and delete buttons */
+    font-size: 0.8em; /* Smaller font size */
+    margin-left: 5px; /* Add some space between buttons */
+    border-radius: 3px; /* Slightly smaller border radius */
+    width: 30px; /* Set a fixed width for edit and delete buttons */
+    min-width: 30px; /* Ensure they don't get smaller than this */
+    text-align: center; /* Center the text */
+}
+
+li .button-container { /* New class for button arrangement */
+    display: flex; /* Use flexbox for button alignment */
+    align-items: center; /* Center buttons vertically */
+}
+
+li button:hover {
+    background-color: #e0e0e0;
+}
+
+.time-result {
+    font-weight: bold; /* Make the time bold */
+    font-size: 1.2em; /* Increase the font size for emphasis */
+    color: #ff4c4c; /* Change the color of the time result */
+    margin-left: 10px; /* Add some space between date/time and time result */
+    padding: 5px; /* Add some padding for better spacing */
+    background-color: #f9f9f9; /* Light background to make it stand out */
+    border-radius: 5px; /* Rounded corners for the background */
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+.note {
+    color: #666; /* Change the color of the note */
+    font-size: 0.9em; /* Slightly smaller font size for notes */
+    margin-left: 10px; /* Add some space between time and note */
+    font-style: italic; /* Italicize the note for differentiation */
+}
+
+
+#noteInput {
+    font-family: Kanit, sans-serif; /* Use the same font as the rest of the app */
+    font-size: 1em; /* Set a comfortable font size */
+    padding: 10px; /* Add padding for better spacing */
+    border: 2px solid #1F36C7; /* Match the border color with the display */
+    border-radius: 5px; /* Slightly rounded corners */
+    width: calc(100% - 24px); /* Full width minus padding */
+    margin: 10px 0; /* Add some margin for spacing */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+    transition: border-color 0.3s; /* Smooth transition for border color */
+}
+
+#noteInput:focus {
+    border-color: #000c5a; /* Change border color on focus */
+    outline: none; /* Remove default outline */
+}
+
+.button-container button {
+    xbackground: none;
+    xborder: none;
+    xcursor: pointer;
+    padding: 5px;
+}
+
+.edit-btn {
+    color: #28a745; /* Green color for edit button */
+    background: none;
+    
+}
+
+.delete-btn {
+    color: #dc3545; /* Red color for delete button */
+    background: none;
+}
+
+.button-container i {
+    font-size: 16px; /* Adjust size as needed */
+}
+
+.button-container button:hover i {
+    opacity: 0.7; /* Change opacity on hover */
+}
