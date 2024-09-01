@@ -192,7 +192,8 @@ function exportToCSV() {
                 .replace(/<br>/g, ',') // Replace <br> with a comma
                 .replace(/<[^>]*>/g, '') // Remove HTML tags
                 .replace(/\s+/g, ' ') // Normalize spaces
-                .replace(/(\d{2}\/\d{2}\/\d{4}) (\d{2}:\d{2}:\d{2})/, '$1,$2'); // Add a comma after the date
+                .replace(/(\d{2}\/\d{2}\/\d{4}) (\d{2}:\d{2}:\d{2})/, '$1,$2') // Add a comma after the date
+                .replace(/(\d{2}:\d{2}\.\d{3}) (.+)/, '$1,$2'); // Add a comma before the note
             return cleanRecord;
         }).join("\n");
 
@@ -205,6 +206,7 @@ function exportToCSV() {
     link.click(); // This will download the CSV file
     document.body.removeChild(link); // Remove the link after downloading
 }
+
 
 // Load history when the page is loaded
 window.onload = loadHistory;
