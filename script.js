@@ -185,6 +185,13 @@ function loadHistory() {
 
 // Function to export history as CSV
 function exportToCSV() {
+    // Sort the history array from newest to oldest
+    history.sort((a, b) => {
+        const dateA = new Date(a.split('<br>')[0].replace(',', ''));
+        const dateB = new Date(b.split('<br>')[0].replace(',', ''));
+        return dateB - dateA; // Sort in descending order
+    });
+
     const csvContent = "data:text/csv;charset=utf-8," 
         + history.map(record => {
             // Replace <br> with a comma and remove HTML tags for CSV
@@ -206,6 +213,7 @@ function exportToCSV() {
     link.click(); // This will download the CSV file
     document.body.removeChild(link); // Remove the link after downloading
 }
+
 
 
 // Load history when the page is loaded
