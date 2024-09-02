@@ -1,4 +1,6 @@
-# Stopwatch Application
+# [Stopwatch Application](https://ananggadipa.github.io/stopwatch/)
+
+[Use here](https://ananggadipa.github.io/stopwatch/)
 
 A simple and user-friendly stopwatch application built with HTML, CSS, and JavaScript. This application allows users to start, pause, reset, and record lap times, along with adding notes for each recorded time.
 
