@@ -34,7 +34,7 @@ h1 {
     background: #f0f0f0;
     border: 2px solid #1F36C7;
     border-radius: 10px;
-    padding: 10px 90px;
+    padding: 10px 60px;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
     display: flex; /* Use flexbox */
     justify-content: left; /* Center horizontally */
