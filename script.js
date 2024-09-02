@@ -235,10 +235,10 @@ document.addEventListener("keydown", function(event) {
         case '3': // 3 to reset
             resetTimer();
             break;
-        case '4': // 4 to clear all history
+        // case '4': // 4 to clear all history
             clearAllHistory();
             break;
-        case '5': // 5 to export history as CSV
+        // case '5': // 5 to export history as CSV
             exportToCSV();
             break;
     }
